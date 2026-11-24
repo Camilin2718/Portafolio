@@ -19,20 +19,24 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenDetails
       onClick={() => onOpenDetails(project)}
       className="group cursor-pointer flex flex-col"
     >
-      {/* Image container */}
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-ash-200 dark:bg-ash-900 border border-ash-300/60 dark:border-ash-800/80 shadow-sm transition-all duration-500 group-hover:shadow-xl">
+      {/* Image container (16:10 desktop screen ratio) */}
+      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-ash-900 border border-ash-300/60 dark:border-ash-800/80 shadow-sm transition-all duration-500 group-hover:shadow-xl">
         <img
           src={project.heroImage}
           alt={project.title}
-          className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
           loading="lazy"
         />
 
-        {/* Hover overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-          <p className="text-white text-xs sm:text-sm font-medium line-clamp-2 drop-shadow-sm">
+        {/* Hover overlay gradient with zoom hint */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+          <p className="text-white text-xs sm:text-sm font-medium line-clamp-2 drop-shadow-sm mb-2">
             {project.tagline}
           </p>
+          <span className="text-[11px] font-semibold text-accent-green flex items-center gap-1.5">
+            <span>Abrir caso de estudio y galería completa</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </span>
         </div>
 
         {/* Top floating pill */}

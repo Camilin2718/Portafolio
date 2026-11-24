@@ -6,28 +6,6 @@ import { motion } from 'framer-motion';
 export const WhoAmI: React.FC = () => {
   const { personal, services } = portfolioData;
 
-  const handleDownloadCV = () => {
-    // Demo alert or simulated download
-    const blob = new Blob(
-      [
-        `CURRICULUM VITAE - ${personal.name.toUpperCase()}\n` +
-        `Rol: ${personal.role}\n` +
-        `Ubicación: ${personal.location}\n` +
-        `Correo: ${personal.email}\n\n` +
-        `Biografía: ${personal.tagline}\n\n` +
-        `Experiencia:\n` +
-        portfolioData.experiences.map(e => `- ${e.period}: ${e.role} en ${e.company} (${e.description})`).join('\n')
-      ],
-      { type: 'text/plain;charset=utf-8' }
-    );
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${personal.name.replace(/\s+/g, '_')}_CV.txt`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
   return (
     <section className="py-16 sm:py-24 border-t border-ash-200/80 dark:border-ash-850">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,7 +31,7 @@ export const WhoAmI: React.FC = () => {
             </p>
 
             {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-ash-200 dark:border-ash-850">
+            <div className="flex flex-wrap items-center gap-8 sm:gap-14 pt-6 border-t border-ash-200 dark:border-ash-850">
               {personal.stats.map((stat, idx) => (
                 <div key={idx}>
                   <p className="text-3xl sm:text-4xl font-extrabold text-ash-950 dark:text-white tracking-tight">
@@ -68,13 +46,16 @@ export const WhoAmI: React.FC = () => {
 
             {/* Download CV Action */}
             <div className="pt-4">
-              <button
-                onClick={handleDownloadCV}
+              <a
+                href="/Juan_Camilo_Lopez_Suarez_CV.pdf"
+                download="Juan_Camilo_Lopez_Suarez_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-ash-950 text-white dark:bg-white dark:text-ash-950 font-semibold text-xs sm:text-sm hover:opacity-90 transition-all shadow-md active:scale-95 group"
               >
                 <Download className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
-                <span>Descargar CV</span>
-              </button>
+                <span>Descargar CV Completo (PDF)</span>
+              </a>
             </div>
           </div>
 
@@ -104,7 +85,7 @@ export const WhoAmI: React.FC = () => {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((srv, index) => (
               <motion.div
                 key={index}

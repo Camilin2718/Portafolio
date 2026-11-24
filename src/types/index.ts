@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   slug: string;
   title: string;
-  category: 'Web Design' | 'UI/UX' | 'Branding' | 'Product Design' | string;
+  category: string;
   client: string;
   year: string;
   timeline: string;
@@ -26,6 +26,26 @@ export interface Experience {
   company: string;
   type: string;
   description: string;
+  achievements?: string[];
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  period: string;
+  status: string;
+}
+
+export interface Reference {
+  name: string;
+  company: string;
+  role: string;
+  phone: string;
+}
+
+export interface Language {
+  language: string;
+  level: string;
 }
 
 export interface Award {
@@ -50,6 +70,7 @@ export interface PortfolioData {
     timezone: string;
     availability: string;
     email: string;
+    phone: string;
     bioParagraph1: string;
     bioParagraph2: string;
     bioParagraph3: string;
@@ -58,6 +79,10 @@ export interface PortfolioData {
     stats: { label: string; value: string }[];
   };
   skills: string[];
+  technicalSkillsByCategory: {
+    category: string;
+    skills: string[];
+  }[];
   services: {
     title: string;
     description: string;
@@ -66,5 +91,8 @@ export interface PortfolioData {
   socials: SocialLink[];
   projects: Project[];
   experiences: Experience[];
+  education: Education[];
+  references: Reference[];
+  languages: Language[];
   awards: Award[];
 }

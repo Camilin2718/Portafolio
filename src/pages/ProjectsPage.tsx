@@ -10,7 +10,7 @@ export const ProjectsPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('Todos');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const categories = ['Todos', 'Full-Stack Web', 'Frontend Web', 'Diseño Web'];
+  const categories = ['Todos', 'Gobierno Digital', 'Full-Stack Web', 'Inteligencia Artificial'];
 
   const filteredProjects =
     activeCategory === 'Todos'

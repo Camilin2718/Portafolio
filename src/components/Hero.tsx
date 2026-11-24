@@ -9,8 +9,10 @@ export const Hero: React.FC = () => {
 
   const disciplines = [
     { title: 'React & TypeScript', color: 'bg-ash-200 dark:bg-ash-850 text-ash-800 dark:text-ash-200' },
-    { title: 'Node.js & Express', color: 'bg-ash-200 dark:bg-ash-850 text-ash-800 dark:text-ash-200' },
-    { title: 'PostgreSQL & MongoDB', color: 'bg-ash-200 dark:bg-ash-850 text-ash-800 dark:text-ash-200' },
+    { title: 'C# & SQL Server', color: 'bg-ash-200 dark:bg-ash-850 text-ash-800 dark:text-ash-200' },
+    { title: 'Python & FastAPI', color: 'bg-ash-200 dark:bg-ash-850 text-ash-800 dark:text-ash-200' },
+    { title: 'Docker & CI/CD', color: 'bg-ash-200 dark:bg-ash-850 text-ash-800 dark:text-ash-200' },
+    { title: 'Integración IA (LLMs)', color: 'bg-ash-200 dark:bg-ash-850 text-ash-800 dark:text-ash-200' },
   ];
 
   return (

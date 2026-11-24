@@ -17,7 +17,7 @@ export const SelectedWorks: React.FC<SelectedWorksProps> = ({
 }) => {
   const [activeCategory, setActiveCategory] = useState<string>('Todos');
 
-  const categories = ['Todos', 'Full-Stack Web', 'Frontend Web', 'Diseño Web'];
+  const categories = ['Todos', 'Gobierno Digital', 'Full-Stack Web', 'Inteligencia Artificial'];
 
   const filteredProjects =
     activeCategory === 'Todos'
@@ -35,7 +35,7 @@ export const SelectedWorks: React.FC<SelectedWorksProps> = ({
               Proyectos Seleccionados
             </h2>
             <p className="mt-2 text-ash-600 dark:text-ash-400 text-sm sm:text-base font-normal max-w-lg">
-              Una cuidada selección de productos digitales recientes, identidades de marca y experiencias web interactivas.
+              Sistemas de gobierno digital, plataformas web completas y soluciones de inteligencia artificial desarrolladas para el mundo real.
             </p>
           </div>
 

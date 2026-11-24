@@ -3,249 +3,308 @@ import type { PortfolioData } from '../types';
 export const portfolioData: PortfolioData = {
   personal: {
     name: "Juan Camilo López Suarez",
-    role: "Desarrollador Full-Stack Junior",
-    tagline: "Construyo aplicaciones web completas, modernas y escalables con React, TypeScript, Node.js y bases de datos. Apasionado por el código limpio, la arquitectura sólida y el aprendizaje continuo.",
+    role: "Desarrollador Junior Full-Stack",
+    tagline: "Desarrollo software robusto para gobierno digital, plataformas web interactivas e integración de IA con React, TypeScript, C#, Python y bases de datos.",
     location: "Medellín, Colombia",
     timezone: "America/Bogota",
     availability: "Disponible para contratación",
     email: "juancamilolopezsuarez9@gmail.com",
-    bioParagraph1: "Soy Juan Camilo López Suarez, desarrollador Full-Stack Junior radicado en Medellín, Colombia. Me apasiona transformar problemas reales en aplicaciones web intuitivas, rápidas y bien estructuradas.",
-    bioParagraph2: "Cuento con bases sólidas tanto en frontend (React, TypeScript, Tailwind CSS) como en backend (Node.js, Express, APIs REST, PostgreSQL y MongoDB). Disfruto colaborar en equipo, recibir retroalimentación constructiva y aprender rápidamente nuevas herramientas del ecosistema.",
-    bioParagraph3: "Mi enfoque combina atención al detalle en la interfaz de usuario con buenas prácticas en la capa de datos y servidor. Busco integrarme a un equipo donde pueda aportar valor real desde el primer día, resolver desafíos técnicos y seguir creciendo profesionalmente.",
+    phone: "+57 301 563 4719",
+    bioParagraph1: "Soy Juan Camilo López Suarez, Desarrollador Junior Full-Stack radicado en Medellín, Colombia, con experiencia real en desarrollo de software para gobierno digital, pruebas de calidad y capacitación técnica a clientes municipales.",
+    bioParagraph2: "Mi experiencia abarca desde el frontend moderno con React, TypeScript y Angular, hasta el backend transaccional con C#, ASP.NET, Python (FastAPI) y bases de datos como SQL Server y PostgreSQL (Neon). Además, implemento flujos CI/CD con Docker y GitHub Actions, e integro modelos de Inteligencia Artificial (LLMs) en aplicaciones interactivas.",
+    bioParagraph3: "Me enfoco en entender el funcionamiento integral de cada sistema para construir productos que funcionen eficientemente en el mundo real. Me caracterizo por mi orden, puntualidad y rigurosa atención al detalle.",
     avatarUrl: "/profile.jpg",
-    cvUrl: "#",
+    cvUrl: "/Juan_Camilo_Lopez_Suarez_CV.pdf",
     stats: [
-      { label: "Repositorios en GitHub", value: "20+" },
-      { label: "Tecnologías dominadas", value: "10+" },
-      { label: "Compromiso & Aprendizaje", value: "100%" },
+      { label: "Municipios asesorados", value: "50+" },
+      { label: "Integraciones de IA", value: "LLMs & Chatbots" },
     ],
   },
   skills: [
     "React",
     "TypeScript",
-    "JavaScript (ES6+)",
-    "Node.js",
-    "Express.js",
-    "PostgreSQL",
-    "MongoDB",
-    "REST APIs",
+    "Angular",
     "Tailwind CSS",
-    "Git & GitHub",
-    "Next.js / Vite",
-    "Prisma ORM"
+    "C# & ASP.NET",
+    "Python & FastAPI",
+    "SQL Server",
+    "PostgreSQL (Neon)",
+    "Docker & CI/CD",
+    "Integración IA / LLMs",
+    "APIs RESTful",
+    "Git & GitHub Actions"
+  ],
+  technicalSkillsByCategory: [
+    {
+      category: "Frontend",
+      skills: ["React", "TypeScript", "Angular", "Tailwind CSS", "Vite", "HTML5/CSS3/JavaScript", "Framer Motion"]
+    },
+    {
+      category: "Backend & APIs",
+      skills: ["C#", "ASP.NET WebForms", "Python", "FastAPI", "SQLAlchemy", "APIs RESTful"]
+    },
+    {
+      category: "Bases de Datos",
+      skills: ["Microsoft SQL Server", "PostgreSQL (Neon)", "Modelado Relacional", "Consultas Optimizadas"]
+    },
+    {
+      category: "DevOps & Despliegue",
+      skills: ["Docker", "Git / GitHub", "GitHub Actions (CI/CD)", "Servidores IIS", "Vercel"]
+    },
+    {
+      category: "Inteligencia Artificial",
+      skills: ["Chatbots con IA", "Integración APIs LLM (Cerebras, Gemini, OpenAI, Groq)", "Prompt Engineering"]
+    },
+    {
+      category: "Redes & Comunicaciones",
+      skills: ["TCP/IP", "Subnetting", "Cisco Packet Tracer", "Protocolos de Correo (IMAP / SSL)"]
+    }
   ],
   services: [
     {
-      title: "Desarrollo Frontend React & TypeScript",
-      description: "Creación de interfaces web interactivas, componentes modulares y reutilizables, consumo fluido de APIs y diseño 100% responsivo.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion"]
+      title: "Desarrollo de Software para Gobierno Digital",
+      description: "Construcción de módulos de ventanilla única, radicación electrónica, gestión documental (SGDEA) y paneles de control para entidades gubernamentales y alcaldías.",
+      tags: ["SGDEA", "Ventanilla Única", "Trámites PQRSD", "C# / ASP.NET", "SQL Server"]
     },
     {
-      title: "Desarrollo Backend & APIs REST",
-      description: "Construcción de servidores robustos con Node.js y Express, autenticación segura (JWT), validación rigurosa de datos y lógica de negocio.",
-      tags: ["Node.js", "Express", "REST APIs", "Autenticación JWT", "Postman"]
+      title: "Aplicaciones Web Full-Stack Modernas",
+      description: "Diseño y arquitectura completa de soluciones web reactivas en React, TypeScript y Angular con backends rápidos en Python (FastAPI) o C#, conectados a bases de datos relacionales.",
+      tags: ["React", "TypeScript", "Angular", "Python / FastAPI", "PostgreSQL", "Tailwind CSS"]
     },
     {
-      title: "Bases de Datos & Arquitectura Full-Stack",
-      description: "Modelado eficiente de datos relacionales y no relacionales, integración con ORMs y despliegue continuo de aplicaciones completas.",
-      tags: ["PostgreSQL", "MongoDB", "Prisma ORM", "Git / GitHub", "Vercel / Render"]
+      title: "Integración de IA & Chatbots Inteligentes",
+      description: "Implementación de asistentes conversacionales y automatización inteligente mediante APIs de LLM de última generación (Groq, Gemini, OpenAI, Cerebras) con interfaces React.",
+      tags: ["Chatbots IA", "LLM APIs", "Prompt Engineering", "React & TypeScript", "Automatización"]
+    },
+    {
+      title: "DevOps, Contenedores & Automatización CI/CD",
+      description: "Contenedorización de microservicios y aplicaciones con Docker, creación de flujos de integración y entrega continua (CI/CD) con GitHub Actions y pruebas de calidad (QA).",
+      tags: ["Docker", "GitHub Actions", "CI/CD", "Pruebas QA", "IIS"]
     }
   ],
   socials: [
     { platform: "GitHub", url: "https://github.com/camilin2718", handle: "camilin2718" },
     { platform: "WhatsApp", url: "https://wa.me/573015634719", handle: "+57 301 563 4719" },
-    { platform: "LinkedIn", url: "https://www.linkedin.com/in/juan-camilo-l%C3%B3pez-suarez", handle: "juan-camilo-lópez-suarez" },
+    { platform: "LinkedIn", url: "https://www.linkedin.com/in/juan-camilo-lopez-suarez", handle: "juan-camilo-lopez-suarez" },
     { platform: "Correo Directo", url: "mailto:juancamilolopezsuarez9@gmail.com", handle: "juancamilolopezsuarez9@gmail.com" },
   ],
   projects: [
     {
       id: "1",
-      slug: "devflow-platform",
-      title: "DevFlow Platform",
-      category: "Full-Stack Web",
-      client: "Proyecto de Código Abierto",
+      slug: "sgdea-gestor-radicacion",
+      title: "SGDEA Municipal — Gestor de Radicación y Archivo Central",
+      category: "Gobierno Digital & Full-Stack",
+      client: "Alcaldías Municipales / Entidades Territoriales",
       year: "2026",
-      timeline: "4 semanas",
-      role: "Desarrollador Full-Stack",
-      projectType: "Full-Stack App",
-      tagline: "Plataforma comunitaria de preguntas, respuestas y debate técnico para desarrolladores de software.",
-      overview: "DevFlow es una aplicación web Full-Stack diseñada para que desarrolladores publiquen dudas de programación, compartan soluciones y voten por las mejores respuestas. Desarrollada con React, TypeScript y Tailwind en el frontend, y Node.js con Express y PostgreSQL en el backend.",
-      challenge: "El desafío radicaba en diseñar una arquitectura limpia con paginación eficiente de preguntas, sistema de votos en tiempo real, búsqueda con filtros por etiquetas tecnológicas y autenticación protegida con JWT.",
-      solution: "Se estructuró una API REST modular con Express y Prisma ORM para consultas optimizadas a PostgreSQL. El frontend se construyó con React y custom hooks para la gestión reactiva de votos y filtrado sin recargar la página.",
-      results: "Arquitectura escalable probada con más de 500 registros simulados y respuestas en menos de 100ms. Código completamente documentado con pruebas de endpoints en Postman.",
+      timeline: "Febrero – Noviembre 2026",
+      role: "Desarrollador Junior Full-Stack & DevOps",
+      projectType: "Sistema de Gestión Documental y Archivo Central (v2.4)",
+      tagline: "Plataforma oficial para radicación de entrada, interna y salida, trazabilidad de expedientes y buzón electrónico IMAP.",
+      overview: "Sistema integral de Gestión Documental Electrónica de Archivo (SGDEA Municipal v2.4) para entidades territoriales y alcaldías de Colombia. Administra el ciclo completo de las comunicaciones oficiales mediante Ventanilla Única: radicación de entrada (comunicaciones de ciudadanos y entes de control como Contraloría), radicación interna (memorandos entre dependencias) y radicación de salida. Incorpora sincronización automática con buzón de correo electrónico institucional (IMAP / SSL 993 vía Outlook Office 365) para procesar solicitudes y anexos PDF en radicados oficiales con un solo clic.",
+      challenge: "Implementar un sistema de radicación consecutiva oficial estricta que prevenga duplicidades, controle términos de ley y riesgo de vencimiento de PQRSD, y además integre la lectura y transferencia de correos electrónicos con anexos PDF desde el buzón de la entidad.",
+      solution: "Arquitectura modular en React y TypeScript con validación en tiempo real y borrador sincronizado en memoria para ventanilla. Integración de servicio IMAP en segundo plano para conexión segura con Office 365. Contenedorización completa con Docker y despliegue continuo mediante GitHub Actions.",
+      results: "Gestión fluida de comunicaciones oficiales en alcaldías, alertas automáticas de expedientes en riesgo de vencimiento y digitalización total de la correspondencia municipal eliminando el papel.",
       metrics: [
-        { label: "Tiempo de Respuesta API", value: "< 100ms" },
-        { label: "Cobertura de Endpoints", value: "18 Rutas" },
-        { label: "Lighthouse Performance", value: "98/100" }
+        { label: "Tipos de Radicación", value: "Entrada, Interna y Salida" },
+        { label: "Integración Correo", value: "IMAP SSL 993 (Office 365)" },
+        { label: "Despliegue", value: "Docker + GitHub Actions" }
       ],
-      heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80",
+      heroImage: "/projects/radicacion/hero.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+        "/projects/radicacion/hero.jpg",
+        "/projects/radicacion/panel.png",
+        "/projects/radicacion/ventanilla.jpg",
+        "/projects/radicacion/buzon.jpg"
       ],
-      deliverables: ["Arquitectura API REST", "Base de Datos PostgreSQL", "Frontend React + TypeScript", "Autenticación JWT", "Despliegue Full-Stack"],
+      deliverables: [
+        "Módulo Ventanilla Única de Radicación (Entrada, Interna y Salida)",
+        "Buzón de Radicación Electrónica IMAP (Outlook Office 365)",
+        "Panel de Control PQRSD y Semáforo de Tiempos de Ley",
+        "Imágenes Docker y Automatización CI/CD con GitHub Actions",
+        "Capacitación Técnica a Equipos Municipales"
+      ],
       liveUrl: "https://github.com/camilin2718"
     },
     {
       id: "2",
-      slug: "shopease-ecommerce",
-      title: "ShopEase E-Commerce",
-      category: "Full-Stack Web",
-      client: "Proyecto Práctico Comercial",
-      year: "2025",
-      timeline: "5 semanas",
-      role: "Desarrollador Full-Stack",
-      projectType: "E-Commerce",
-      tagline: "Tienda en línea completa con catálogo dinámico, carrito persistente y pasarela de pagos.",
-      overview: "ShopEase es una plataforma de comercio electrónico Full-Stack que permite explorar productos, filtrar por categorías y precios, administrar un carrito de compras interactivo y procesar pedidos de prueba.",
-      challenge: "Implementar un flujo de compra robusto que mantenga la sincronización del carrito entre recargas de página, valide stock en el backend y asegure las transacciones sin duplicación de órdenes.",
-      solution: "Frontend desarrollado con React y Context API para el estado global del carrito. Backend con Node.js y MongoDB para almacenamiento flexible de productos y órdenes, integrando simulación de pasarela de pago segura.",
-      results: "Flujo de compra fluido completado en 3 pasos, interfaz responsive adaptable a teléfonos móviles y panel de administración para gestión de inventario.",
+      slug: "dashboard-gestion-tramites",
+      title: "Dashboard de Gestión de Trámites y PQRSD",
+      category: "Gobierno Digital & Analítica",
+      client: "Alcaldías Municipales (~50 Municipios)",
+      year: "2026",
+      timeline: "8 semanas",
+      role: "Desarrollador Full-Stack (Frontend, Backend & DB)",
+      projectType: "Panel Analítico & Gestión Ciudadana",
+      tagline: "Panel integral para monitoreo, métricas y gestión de trámites ciudadanos con y sin recaudo, y peticiones PQRSD.",
+      overview: "Panel analítico y operativo de alto rendimiento diseñado para entidades territoriales y secretarías municipales. Centraliza el control de solicitudes ciudadanas: PQRSD anónimas e identificadas, trámites con recaudo y trámites sin recaudo (licencias de construcción, certificados de residencia, permisos de apertura de local). Incluye reportes diarios, gráficos de dona de avance y comparativas de radicación vs. resolución mensual.",
+      challenge: "Consolidar métricas provenientes de diversas secretarías municipales en un dashboard claro y en tiempo real, garantizando que los funcionarios puedan auditar porcentajes de finalización y cuellos de botella en la atención.",
+      solution: "Frontend modular construido con React y TypeScript, utilizando componentes visuales y Tailwind CSS para gráficos de progreso y estado de trámites. Backend desarrollado en C# conectado a Microsoft SQL Server para procesamiento transaccional de expedientes.",
+      results: "Reducción drástica en tiempos de consulta de estado para los funcionarios, visualización centralizada del volumen de solicitudes y control visual del cumplimiento municipal en más de un 60%-88% por trámite.",
       metrics: [
-        { label: "Páginas & Vistas", value: "8 Pantallas" },
-        { label: "Operaciones CRUD", value: "100% Funcional" },
-        { label: "Compatibilidad Móvil", value: "100%" }
+        { label: "Municipios Asesorados", value: "~50 Municipios" },
+        { label: "Tipos de Trámites", value: "PQRSD, Con y Sin Recaudo" },
+        { label: "Visualización", value: "Gráficos & KPIs Diarios" }
       ],
-      heroImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1400&q=80",
+      heroImage: "/projects/tramites/hero.png",
       gallery: [
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=1200&q=80"
+        "/projects/tramites/hero.png",
+        "/projects/tramites/metricas.jpg",
+        "/projects/tramites/cards.png"
       ],
-      deliverables: ["Catálogo de Productos", "Carrito de Compras", "API en Node/Express", "Base de Datos MongoDB", "Panel de Gestión"],
+      deliverables: [
+        "Dashboard Analítico en React + TypeScript",
+        "Servicios Backend en C#",
+        "Base de Datos Microsoft SQL Server",
+        "Reportes Diarios & Mensuales de Solicitudes",
+        "Métricas de Eficiencia por Secretaría"
+      ],
       liveUrl: "https://github.com/camilin2718"
     },
     {
       id: "3",
-      slug: "tasksync-manager",
-      title: "TaskSync Manager",
-      category: "Frontend Web",
-      client: "Herramienta de Productividad",
-      year: "2025",
-      timeline: "3 semanas",
-      role: "Desarrollador Frontend",
-      projectType: "Productivity App",
-      tagline: "Aplicación de gestión de tareas estilo Kanban con arrastrar y soltar e historial de actividad.",
-      overview: "TaskSync es un gestor de proyectos interactivo diseñado para organizar flujos de trabajo personales o en equipo mediante tableros personalizables, etiquetas de prioridad y fechas de vencimiento.",
-      challenge: "Lograr una interacción rápida de arrastrar y soltar (drag & drop) que funcione sin retrasos en navegadores de escritorio y dispositivos táctiles, preservando el orden de las tareas en todo momento.",
-      solution: "Construida con React, TypeScript y Tailwind CSS, empleando HTML5 Drag and Drop API y almacenamiento en LocalStorage con sincronización preparada para API REST.",
-      results: "Experiencia de usuario instantánea y fluida a 60 FPS, con atajos de teclado y modo oscuro integrado.",
+      slug: "tilinflex-streaming",
+      title: "TILINFLEX — Plataforma de Streaming Anime",
+      category: "Full-Stack Web & Streaming",
+      client: "Proyecto de Desarrollo Full-Stack",
+      year: "2026",
+      timeline: "6 semanas",
+      role: "Desarrollador Full-Stack (Python & Angular)",
+      projectType: "Plataforma de Streaming Web",
+      tagline: "Plataforma de streaming de anime con catálogo dinámico, filtros avanzados y reproductor multimedia.",
+      overview: "Tilinflex es una plataforma web completa de streaming orientada a series y películas de anime. Cuenta con un catálogo interactivo con carruseles de episodios en tendencia, buscador en tiempo real, barra lateral de filtros multicriterio (por tipo, estado de emisión, género y ordenamiento) y una arquitectura desacoplada con backend en Python y base de datos relacional serverless en PostgreSQL (Neon).",
+      challenge: "Diseñar un backend eficiente capaz de gestionar catálogos de video y metadatos con consultas rápidas, junto con un frontend reactivo en Angular que permita filtrado instantáneo sin recargar vistas y una interfaz fluida en modo oscuro.",
+      solution: "Se desarrolló una API RESTful con Python y FastAPI conectada a PostgreSQL alojada en Neon Cloud para consultas de baja latencia. En el cliente se utilizó Angular con Tailwind CSS para una interfaz inmersiva y un sistema modular de filtros dinámicos.",
+      results: "Navegación cinematográfica rápida con tiempos de respuesta de API < 120ms, exploración ágil de títulos organizados por temporadas y episodios, y diseño 100% responsivo.",
       metrics: [
-        { label: "Rendimiento", value: "60 FPS" },
-        { label: "Persistencia de Datos", value: "LocalStorage / API" },
-        { label: "Accesibilidad", value: "WCAG AA" }
+        { label: "Tiempo de Respuesta API", value: "< 120ms" },
+        { label: "Base de Datos Cloud", value: "PostgreSQL (Neon)" },
+        { label: "Frontend", value: "Angular + Tailwind" }
       ],
-      heroImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=1400&q=80",
+      heroImage: "/projects/tilinflex/hero.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+        "/projects/tilinflex/hero.jpg",
+        "/projects/tilinflex/explorar.jpg"
       ],
-      deliverables: ["Tablero Kanban Interactivo", "Drag and Drop", "Componentes en React", "Diseño Responsivo"],
+      deliverables: [
+        "API REST en Python (FastAPI)",
+        "Base de Datos PostgreSQL en Neon Cloud",
+        "Frontend SPA en Angular",
+        "Filtros Multicriterio Dinámicos",
+        "Interfaz Inmersiva en Modo Oscuro"
+      ],
       liveUrl: "https://github.com/camilin2718"
     },
     {
       id: "4",
-      slug: "fintrack-dashboard",
-      title: "FinTrack Dashboard",
-      category: "Frontend Web",
-      client: "Panel Analítico",
-      year: "2024",
-      timeline: "3 semanas",
-      role: "Desarrollador Frontend",
-      projectType: "Analytics Dashboard",
-      tagline: "Dashboard analítico para monitoreo de ingresos, gastos y presupuestos mensuales con gráficos interactivos.",
-      overview: "FinTrack es una interfaz analítica moderna que transforma datos numéricos en métricas visuales intuitivas: gráficos de líneas, barras de distribución de gastos y tablas con ordenamiento dinámico.",
-      challenge: "Organizar gran cantidad de información financiera en un diseño limpio, evitando saturar la vista del usuario y facilitando filtros por rangos de fecha.",
-      solution: "Desarrollado con React, TypeScript y Chart.js/Recharts. Diseño basado en tarjetas modulares con Tailwind CSS y consumo de datos simulados mediante endpoints REST asíncronos.",
-      results: "Visualización clara de tendencias financieras, exportación básica de reportes y tiempo de carga inferior a 0.8 segundos.",
+      slug: "chatbots-ia-municipal",
+      title: "Chatbots con Inteligencia Artificial para Ciudadanía",
+      category: "Inteligencia Artificial & Frontend",
+      client: "1cero1 Software / Sector Municipal",
+      year: "2026",
+      timeline: "Febrero – Noviembre 2026",
+      role: "Desarrollador Frontend & Prompt Engineer",
+      projectType: "Asistente Virtual con LLM",
+      tagline: "Chatbots conversacionales inteligentes para orientación ciudadana y radicación de consultas.",
+      overview: "Implementación de asistentes conversacionales dotados de Inteligencia Artificial para sitios web y plataformas de atención a la ciudadanía municipal. Desarrollados con React y TypeScript, e integrados con modelos de lenguaje a través de APIs de LLM avanzadas (Cerebras, Gemini, OpenAI y Groq), brindando respuestas contextuales precisas y guiando a los usuarios en sus trámites.",
+      challenge: "Garantizar tiempos de respuesta inmediatos y respuestas estrictamente delimitadas al contexto normativo municipal, evitando alucinaciones y facilitando la interacción a usuarios con baja familiaridad digital.",
+      solution: "Diseño riguroso de prompts (Prompt Engineering), interfaces de chat en React con streaming de respuestas en tiempo real, manejo de estados con TypeScript y conexión con endpoints de inferencia rápida.",
+      results: "Atención automatizada 24/7 de preguntas frecuentes ciudadanas, reduciendo la carga de consultas repetitivas en las ventanillas municipales.",
       metrics: [
-        { label: "Velocidad de Carga", value: "0.8s" },
-        { label: "Gráficos Dinámicos", value: "5 Tipos" },
-        { label: "Diseño Modular", value: "100%" }
+        { label: "Modelos Integrados", value: "Gemini, Groq, OpenAI" },
+        { label: "Frontend", value: "React + TypeScript" },
+        { label: "Disponibilidad", value: "24/7 Asistido por IA" }
       ],
-      heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
+      heroImage: "/projects/ia/ai-hero.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+        "/projects/ia/ai-hero.jpg",
+        "/projects/ia/ai-chip.jpg",
+        "/projects/ia/ai-cloud.jpg"
       ],
-      deliverables: ["Dashboard de Métricas", "Gráficos Interactivos", "Consumo de API REST", "Modo Oscuro"],
-      liveUrl: "https://github.com/camilin2718"
-    },
-    {
-      id: "5",
-      slug: "cafe-origen",
-      title: "Café Origen",
-      category: "Diseño Web",
-      client: "Proyecto Web Comercial",
-      year: "2024",
-      timeline: "2 semanas",
-      role: "Desarrollador Web",
-      projectType: "Sitio Web Comercial",
-      tagline: "Sitio web para una marca de café especial con catálogo de variedades y selector de molienda.",
-      overview: "Café Origen es una landing page moderna e interactiva creada para presentar café de origen colombiano, su proceso de tostión artesanal y permitir a los clientes explorar métodos de preparación recomendados.",
-      challenge: "Crear una experiencia visual cautivadora que transmita la tradición cafetera con animaciones sutiles y tiempos de carga ultra rápidos.",
-      solution: "Construida con React, Vite y Tailwind CSS, optimizando imágenes webp y transiciones suaves con Framer Motion.",
-      results: "Puntuación de 100/100 en SEO y Accesibilidad en Google Lighthouse, navegación intuitiva y adaptable a cualquier pantalla.",
-      metrics: [
-        { label: "Google Lighthouse", value: "100/100" },
-        { label: "Peso Total", value: "< 500kb" },
-        { label: "Tasa de Rebote", value: "-40%" }
+      deliverables: [
+        "Componente de Chatbot Interactivo en React",
+        "Integración de APIs de LLM (Cerebras, Gemini, OpenAI, Groq)",
+        "Prompt Engineering Especializado en Gestión Pública",
+        "Historial de Conversación y Manejo de Errores"
       ],
-      heroImage: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=80",
-      gallery: [
-        "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
-      ],
-      deliverables: ["Diseño Web Responsivo", "Optimización Lighthouse", "Animaciones Framer Motion", "Catálogo Interactivo"],
       liveUrl: "https://github.com/camilin2718"
     }
   ],
   experiences: [
     {
+      period: "Febrero 2026 – Noviembre 2026",
+      role: "Desarrollador Junior",
+      company: "1cero1 Software S.A.S",
+      type: "Tiempo Completo / Híbrido",
+      description: "Desarrollo de software para gobierno digital, cubriendo el ciclo de vida de desarrollo, pruebas de calidad (QA), automatización de infraestructura y capacitación a clientes municipales en todo el país.",
+      achievements: [
+        "Creé imágenes y contenedores Docker para todos los proyectos de la empresa y automaticé estos procesos mediante integración continua (CI/CD) con GitHub Actions.",
+        "Creé y publiqué diversos formularios para la ciudadanía, como parte de la asesoría y la creación de software para alrededor de 50 municipios del país.",
+        "Implementé chatbots con herramientas de inteligencia artificial, usando React y TypeScript.",
+        "Realicé pruebas de calidad del software desarrollado para los municipios garantizando estándares de estabilidad.",
+        "Brindé capacitaciones a diversos municipios sobre el uso de los softwares que se les suministraban."
+      ]
+    },
+    {
       period: "2024 – Presente",
-      role: "Desarrollador Full-Stack Junior",
-      company: "Proyectos Independientes & Open Source",
-      type: "Proyectos / Freelance",
-      description: "Construcción de aplicaciones web Full-Stack completas con React, TypeScript, Node.js y bases de datos relacionales y NoSQL. Implementación de buenas prácticas de código, arquitectura modular y control de versiones con Git."
+      role: "Desarrollador de Software en Formación & Proyectos",
+      company: "Institución Universitaria ITM / Proyectos Personales",
+      type: "Educación & Práctica Aplicada",
+      description: "Diseño y desarrollo de plataformas completas como Tilinflex (streaming con Python, Angular y Neon PostgreSQL), aplicaciones analíticas y experimentación con redes y LLMs.",
+      achievements: [
+        "Construcción de arquitecturas cliente-servidor con Angular, React, FastAPI y C#.",
+        "Modelado de bases de datos relacionales en SQL Server y PostgreSQL.",
+        "Prácticas avanzadas de redes (TCP/IP, subnetting y simulaciones en Cisco Packet Tracer)."
+      ]
+    }
+  ],
+  education: [
+    {
+      degree: "Tecnología en Desarrollo de Software",
+      institution: "Institución Universitaria ITM",
+      period: "2024 – Presente",
+      status: "En curso"
+    }
+  ],
+  references: [
+    {
+      name: "Javier González",
+      company: "1cero1 Software S.A.S",
+      role: "Líder de Desarrollo",
+      phone: "+57 301 336 6200"
+    }
+  ],
+  languages: [
+    {
+      language: "Español",
+      level: "Nativo"
     },
     {
-      period: "2023 – 2024",
-      role: "Desarrollador Frontend & Backend",
-      company: "Práctica & Proyectos Prácticos",
-      type: "Desarrollo Activo",
-      description: "Desarrollo de interfaces de usuario responsivas con React y Tailwind CSS, integración de APIs RESTful, diseño de modelos de datos en PostgreSQL y MongoDB y despliegue en entornos cloud."
+      language: "Inglés",
+      level: "B2 (Intermedio Avanzado)"
     },
     {
-      period: "2022 – 2023",
-      role: "Estudiante de Desarrollo Web Full-Stack",
-      company: "Formación Técnica & Autodidacta",
-      type: "Educación & Certificación",
-      description: "Formación intensiva en fundamentos de ingeniería de software, algoritmia, JavaScript moderno (ES6+), estructuras de datos, patrones de diseño y trabajo colaborativo con Git y GitHub."
+      language: "Alemán",
+      level: "B1 (Intermedio)"
     }
   ],
   awards: [
     {
+      year: "2026",
+      title: "Despliegue de Soluciones para Gobierno Digital",
+      organization: "1cero1 Software S.A.S",
+      description: "Reconocimiento por el despliegue exitoso de contenedores Docker, automatización CI/CD con GitHub Actions y soporte a más de 50 municipios."
+    },
+    {
+      year: "2025",
+      title: "Implementación de Asistentes IA en Software Ciudadano",
+      organization: "Sector Tecnológico",
+      description: "Diseño e integración de chatbots inteligentes con APIs de LLMs en interfaces web React para atención ciudadana 24/7."
+    },
+    {
       year: "2024",
-      title: "Certificación en Desarrollo Web Full-Stack",
-      organization: "Academia de Software",
-      description: "Acreditación por dominar el desarrollo de aplicaciones completas: interfaces con React, servidores con Node.js/Express y gestión de bases de datos relacionales y no relacionales."
-    },
-    {
-      year: "2023",
-      title: "Especialización en React & TypeScript",
-      organization: "Plataforma de Educación Tech",
-      description: "Certificado en desarrollo de aplicaciones web escalables, tipado estricto, custom hooks, gestión de estado y optimización de rendimiento."
-    },
-    {
-      year: "2023",
-      title: "Desarrollo Backend con Node.js & APIs REST",
-      organization: "Certificación de Ingeniería",
-      description: "Reconocimiento por la creación y documentación de APIs seguras, autenticación con JWT, testing de endpoints y conexión con PostgreSQL."
-    },
-    {
-      year: "2022",
-      title: "Fundamentos de Programación & Algoritmos",
-      organization: "Educación en Computación",
-      description: "Bases sólidas en resolución de problemas algorítmicos, lógica de programación, complejidad temporal y buenas prácticas de código limpio."
+      title: "Tecnología en Desarrollo de Software",
+      organization: "Institución Universitaria ITM",
+      description: "Formación académica de excelencia en ingeniería de software, arquitectura de sistemas, bases de datos y redes computacionales."
     }
   ]
 };

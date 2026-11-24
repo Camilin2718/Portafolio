@@ -46,16 +46,26 @@ export const ExperienceSection: React.FC = () => {
                 <h3 className="text-lg font-bold text-ash-950 dark:text-white group-hover:text-ash-600 dark:group-hover:text-ash-300 transition-colors">
                   {exp.role}
                 </h3>
-                <p className="text-sm font-medium text-ash-500 dark:text-ash-400 mt-0.5">
+                <p className="text-sm font-semibold text-ash-700 dark:text-ash-300 mt-0.5">
                   {exp.company}
                 </p>
               </div>
 
-              {/* Description */}
-              <div className="md:col-span-5">
+              {/* Description & Achievements */}
+              <div className="md:col-span-5 space-y-3">
                 <p className="text-sm text-ash-600 dark:text-ash-400 font-normal leading-relaxed">
                   {exp.description}
                 </p>
+                {exp.achievements && exp.achievements.length > 0 && (
+                  <ul className="space-y-2 pt-1 border-t border-ash-200/50 dark:border-ash-800/50">
+                    {exp.achievements.map((item, aIdx) => (
+                      <li key={aIdx} className="text-xs sm:text-sm text-ash-700 dark:text-ash-300 flex items-start gap-2 leading-relaxed">
+                        <span className="text-accent-green mt-1 text-xs shrink-0 font-bold">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
