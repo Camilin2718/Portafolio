@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
           <p>© {new Date().getFullYear()} {personal.name}. Todos los derechos reservados.</p>
           
           <div className="flex items-center gap-6">
-            <span>Inspirado en Asher Vale • Desarrollado con React y TypeScript</span>
+            <span>Desarrollado con React y TypeScript</span>
             <button
               onClick={scrollToTop}
               className="inline-flex items-center gap-1 hover:text-ash-950 dark:hover:text-white transition-colors"

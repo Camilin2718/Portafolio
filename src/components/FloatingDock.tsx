@@ -14,12 +14,12 @@ export const FloatingDock: React.FC = () => {
   ];
 
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 pointer-events-auto">
+    <div className="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-40 pointer-events-auto max-w-[96vw]">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2, type: 'spring', stiffness: 260, damping: 20 }}
-        className="flex items-center gap-1.5 p-1.5 rounded-full bg-ash-950/90 dark:bg-ash-900/90 backdrop-blur-xl border border-ash-800 shadow-2xl text-white"
+        className="flex items-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-full bg-ash-950/90 dark:bg-ash-900/90 backdrop-blur-xl border border-ash-800 shadow-2xl text-white"
       >
         {dockItems.map((item) => {
           const isActive = location.pathname === item.path;
@@ -29,7 +29,7 @@ export const FloatingDock: React.FC = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`relative px-4 py-2 rounded-full text-xs font-medium flex items-center gap-2 transition-all duration-200 select-none ${
+              className={`relative px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-medium flex items-center gap-1.5 sm:gap-2 transition-all duration-200 select-none whitespace-nowrap ${
                 isActive
                   ? 'text-ash-950 font-semibold'
                   : 'text-ash-400 hover:text-white hover:bg-white/10'

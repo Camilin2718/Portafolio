@@ -1,12 +1,12 @@
 # Juan Camilo López Suarez — Portafolio (Vite + React + TypeScript)
 
-Un portafolio moderno, minimalista y de alto impacto inspirado en la plantilla **Asher Vale** de Framer, recreado con **React 19**, **TypeScript**, **Vite**, **Tailwind CSS** y **Framer Motion**.
+Un portafolio moderno, minimalista y de alto impacto, construido con **React 19**, **TypeScript**, **Vite**, **Tailwind CSS** y **Framer Motion**.
 
 ---
 
 ## ✨ Características Principales
 
-- **Diseño Editorial & Minimalista**: Tipografía cuidada, espaciado preciso y alto contraste inspirado en la estética suiza / editorial de Asher Vale.
+- **Diseño Editorial & Minimalista**: Tipografía cuidada, espaciado preciso y alto contraste con enfoque moderno.
 - **Header Dinámico**:
   - Indicador de estado con pulso verde activo (*"Available now"*).
   - Reloj en tiempo real sincronizado (*"London, UK • Live Time"*).

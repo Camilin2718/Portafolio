@@ -58,7 +58,7 @@ export const Navbar: React.FC = () => {
           {/* CTA Button */}
           <Link
             to="/contact"
-            className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold rounded-full bg-ash-950 text-white dark:bg-white dark:text-ash-950 hover:bg-ash-800 dark:hover:bg-ash-200 transition-all active:scale-95 shadow-xs whitespace-nowrap shrink-0"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold rounded-full bg-ash-950 text-white dark:bg-white dark:text-ash-950 hover:bg-ash-800 dark:hover:bg-ash-200 transition-all active:scale-95 shadow-xs whitespace-nowrap shrink-0"
           >
             <span>Hablemos</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
