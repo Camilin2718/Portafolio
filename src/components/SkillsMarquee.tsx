@@ -8,7 +8,7 @@ export const SkillsMarquee: React.FC = () => {
   const list = [...skills, ...skills, ...skills];
 
   return (
-    <div className="py-8 bg-ash-200/50 dark:bg-ash-900/40 border-y border-ash-200 dark:border-ash-850 overflow-hidden select-none mask-marquee">
+    <div className="w-full max-w-full py-6 sm:py-8 bg-ash-200/50 dark:bg-ash-900/40 border-y border-ash-200 dark:border-ash-850 overflow-hidden select-none mask-marquee">
       <div className="flex w-max animate-marquee">
         {list.map((skill, index) => (
           <div key={index} className="flex items-center space-x-6 px-4">

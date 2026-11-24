@@ -23,7 +23,7 @@ export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-ash-100 text-ash-950 dark:bg-ash-950 dark:text-ash-50 font-sans selection:bg-ash-950 selection:text-white dark:selection:bg-white dark:selection:text-ash-950 transition-colors duration-300">
+      <div className="min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-ash-100 text-ash-950 dark:bg-ash-950 dark:text-ash-50 font-sans selection:bg-ash-950 selection:text-white dark:selection:bg-white dark:selection:text-ash-950 transition-colors duration-300">
         <Navbar />
 
         <div className="flex-1">
