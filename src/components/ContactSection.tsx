@@ -178,7 +178,7 @@ export const ContactSection: React.FC = () => {
             </div>
 
             {/* Social Channels & GitHub Card */}
-            <div className="p-8 rounded-3xl bg-ash-50 dark:bg-ash-900/70 border border-ash-200 dark:border-ash-800">
+            <div className="p-6 sm:p-8 rounded-3xl bg-ash-50 dark:bg-ash-900/70 border border-ash-200 dark:border-ash-800">
               <span className="text-xs font-bold uppercase tracking-wider text-ash-500 block mb-4">
                 Redes Profesionales & Código
               </span>
@@ -189,12 +189,12 @@ export const ContactSection: React.FC = () => {
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between py-2.5 text-sm font-semibold text-ash-800 dark:text-ash-200 hover:text-ash-950 dark:hover:text-white border-b border-ash-200/60 dark:border-ash-800/60 last:border-0 group transition-colors"
+                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 py-3 text-sm font-semibold text-ash-800 dark:text-ash-200 hover:text-ash-950 dark:hover:text-white border-b border-ash-200/60 dark:border-ash-800/60 last:border-0 group transition-colors"
                   >
-                    <span>{s.platform}</span>
-                    <span className="text-xs font-mono text-ash-400 flex items-center gap-1 group-hover:text-ash-950 dark:group-hover:text-white transition-colors">
-                      {s.handle || 'Explorar'}
-                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    <span className="text-ash-950 dark:text-white font-semibold">{s.platform}</span>
+                    <span className="text-xs font-mono text-ash-500 dark:text-ash-400 flex items-center gap-1.5 group-hover:text-ash-950 dark:group-hover:text-white transition-colors break-all">
+                      <span>{s.handle || 'Explorar'}</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </span>
                   </a>
                 ))}
