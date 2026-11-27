@@ -32,20 +32,24 @@ export const portfolioData: PortfolioData = {
     "Docker & CI/CD",
     "Integración IA / LLMs",
     "APIs RESTful",
-    "Git & GitHub Actions"
+    "Git & GitHub Actions",
+    "SAP CAP (Node.js)",
+    "OpenUI5 / SAP Fiori",
+    "OData v4",
+    "SQLite"
   ],
   technicalSkillsByCategory: [
     {
       category: "Frontend",
-      skills: ["React", "TypeScript", "Angular", "Tailwind CSS", "Vite", "HTML5/CSS3/JavaScript", "Framer Motion"]
+      skills: ["React", "TypeScript", "Angular", "OpenUI5 / SAP Fiori", "Tailwind CSS", "Vite", "HTML5/CSS3/JavaScript", "Framer Motion"]
     },
     {
       category: "Backend & APIs",
-      skills: ["C#", "ASP.NET WebForms", "Python", "FastAPI", "SQLAlchemy", "APIs RESTful"]
+      skills: ["C#", "ASP.NET WebForms", "Python", "FastAPI", "SQLAlchemy", "SAP CAP (Node.js)", "OData v4", "APIs RESTful"]
     },
     {
       category: "Bases de Datos",
-      skills: ["Microsoft SQL Server", "PostgreSQL (Neon)", "Modelado Relacional", "Consultas Optimizadas"]
+      skills: ["Microsoft SQL Server", "PostgreSQL (Neon)", "SQLite", "Modelado Relacional", "Consultas Optimizadas"]
     },
     {
       category: "DevOps & Despliegue",
@@ -225,6 +229,41 @@ export const portfolioData: PortfolioData = {
         "Integración de APIs de LLM (Cerebras, Gemini, OpenAI, Groq)",
         "Prompt Engineering Especializado en Gestión Pública",
         "Historial de Conversación y Manejo de Errores"
+      ],
+      liveUrl: "https://github.com/camilin2718"
+    },
+    {
+      id: "5",
+      slug: "sap-cap-inventory-fiori",
+      title: "Portal de Compras e Inventario (SAP MM / Fiori)",
+      category: "Ecosistema SAP & Full-Stack",
+      client: "Proyecto Empresarial SAP BTP / Local",
+      year: "2026",
+      timeline: "Noviembre 2026",
+      role: "Desarrollador SAP CAP & OpenUI5",
+      projectType: "Aplicación Empresarial SAP Fiori (CAP + OData v4)",
+      tagline: "Portal de gestión de inventario, catálogo de materiales y órdenes de compra con flujo de aprobación y actualización automática de stock.",
+      overview: "Aplicación empresarial estilo SAP MM / SAP Fiori desarrollada con arquitectura oficial de SAP: backend en SAP Cloud Application Programming Model (CAP) sobre Node.js con modelo de datos CDS, base de datos SQLite y servicios OData v4 reales, conectado a un frontend OpenUI5 con tema SAP Horizon, ShellBar y navegación lateral (ToolPage / SideNavigation).",
+      challenge: "Implementar un sistema completo de compras e inventario con lógica transaccional real (cálculo automático de subtotales y totales, flujo de estados de órdenes y actualización segura del stock en almacén) siguiendo los estándares oficiales de SAP sin depender de licencias ni servidores pagos.",
+      solution: "Modelado relacional en CDS (Suppliers, Materials, PurchaseOrders, PurchaseOrderItems) con datos semilla en CSV, acciones OData v4 personalizadas (submitOrder, approveOrder, receiveGoods, cancelOrder, adjustStock) y una interfaz OpenUI5 con Dashboard de KPIs, buscador de materiales y maestro-detalle de órdenes de compra.",
+      results: "Control en tiempo real del stock crítico, automatización del ingreso de mercancía al inventario al recibir órdenes aprobadas y una arquitectura portable lista para escalar a SAP HANA Cloud o PostgreSQL.",
+      metrics: [
+        { label: "Backend & API", value: "SAP CAP (Node.js) + OData v4" },
+        { label: "Frontend UI", value: "OpenUI5 / SAP Fiori Horizon" },
+        { label: "Base de Datos", value: "SQLite (@cap-js/sqlite)" }
+      ],
+      heroImage: "/projects/sap-inventario/hero.png",
+      gallery: [
+        "/projects/sap-inventario/hero.png",
+        "/projects/sap-inventario/materiales.png",
+        "/projects/sap-inventario/ordenes.png"
+      ],
+      deliverables: [
+        "Modelo de Datos CDS y Datos Iniciales CSV (SAP CAP)",
+        "Servicio OData v4 con Lógica Transaccional y Acciones",
+        "Frontend OpenUI5 estilo SAP S/4HANA (ShellBar + SideNavigation)",
+        "Dashboard de KPIs, Catálogo de Materiales y Órdenes de Compra",
+        "Persistencia en SQLite con @cap-js/sqlite"
       ],
       liveUrl: "https://github.com/camilin2718"
     }
